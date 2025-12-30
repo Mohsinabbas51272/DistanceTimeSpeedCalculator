@@ -1,0 +1,104 @@
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.2s ease;
+}
+
+.tab:not(:last-child) {
+  margin-right: 5px;
+}
+
+.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px 0;
+  font-weight: 500;
+  color: #333;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.calc,
+.reset {
+  flex: 1;
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.calc {
+  background-color: #28a745;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.calc:hover {
+  background-color: #218838;
+}
+
+.reset {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.reset:hover {
+  background-color: #c82333;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
